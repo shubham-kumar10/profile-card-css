@@ -103,6 +103,16 @@ footer {
   border-bottom: 1px solid var(--dark-gray);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card__details  img{
+  border-radius: 50%;
+  border: 5px solid white;
+  transform: translateY(-50%);
 }
 
 .card__footer {
