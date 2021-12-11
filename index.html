@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-  <link rel="stylesheet" href="styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-  </style>
-</head>
-<body>
-  <header>CSS Practice</header>
-  <section class="styleGuide">
-    <p class="styleGuide__title">Style Guides</p>
-    <section class="styleGuide__items">
-      <article class="color-1 padding-10 margin-10">dark-cyan</article>
-      <article class="color-2 padding-10 margin-10">very-dark-desaturated-blue</article>
-      <article class="color-3 padding-10 margin-10">dark-grayish-blue</article>
-      <article class="color-4 padding-10 margin-10">dark-gray</article>
-    </section>
-  </section>
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="styles.css" />
 
-  <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <header class="heading-1">CSS Practice</header>
+    <main>
+      <section class="card">
+        <section class="card__backdrop"></section>
+        <section class="card__details">
+          <img src="./images/image-victor.jpg" alt="" class="card__details--img " />
+          <article class="card__details--intro">
+            <p class="heading-1 text__bold text__color--primary">
+            Victor Crest
+            </p>
+            <p class="heading-1 text__color--light">26</p>
+          </article>
+          <p class="heading-1 text__color--light">London</p>
+
+        </section>
+        <section class="card__details--footer">
+          <div class="footer__item text__bold">
+            <p class="heading-2">80K</p> 
+            <p class="heading-6 text__color--light">Followers</p>
+          </div>
+          
+          <div class="footer__item text__bold">
+            <p class="heading-2">803K</p> 
+            <p class="heading-6 text__color--light">Likes</p>
+          </div>
+
+          <div class="footer__item text__bold">
+            <p class="heading-2">1.4K</p> 
+            <p class="heading-6 text__color--light">Photos</p>
+          </div>
+        </section> 
+      </section>
+      <section class="styleGuide">
+        <p class="styleGuide__title">Style Guides</p>
+        <section class="styleGuide__items">
+          <article class="color-1 padding-10 margin-10">dark-cyan</article>
+          <article class="color-2 padding-10 margin-10">
+            very-dark-desaturated-blue
+          </article>
+          <article class="color-3 padding-10 margin-10">
+            dark-grayish-blue
+          </article>
+          <article class="color-4 padding-10 margin-10">dark-gray</article>
+        </section>
+      </section>
+    </main>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
