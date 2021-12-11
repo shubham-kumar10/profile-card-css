@@ -11,6 +11,7 @@
 
 * {
   font-size: 10px;
+  font-family: "Kumbh Sans";
 }
 
 body {
@@ -91,32 +92,64 @@ footer {
 }
 
 .card__backdrop {
-  flex-grow: 4;
+  flex-grow: 0.4;
   background-image: url(./images/bg-pattern-card.svg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 .card__details {
-  flex-grow: 6;
   background-color: white;
-  border-bottom: 1px solid var(--dark-gray);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
-.card__details  img{
+.card__details img {
   border-radius: 50%;
   border: 5px solid white;
   transform: translateY(-50%);
 }
 
-.card__footer {
-  flex-grow: 2;
-  background-color: red;
+.card__details--intro {
+  display: flex;
+}
 
+.card__details--footer {
+  display: flex;
+  border-top: 1px solid var(--dark-grayish-blue);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+  flex-grow: 0.2;
+}
+
+/* Typography Components */
+
+.heading-1 {
+  margin: 0.5rem;
+  font-size: 24px;
+}
+
+.heading-2 {
+  margin: 0.5rem;
+  font-size: 20px;
+}
+
+.heading-6 {
+  margin: 0.5rem;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+}
+
+.text__bold {
+  font-weight: 700;
+}
+
+.text__color--primary {
+  color: var(--very-dark-desaturated-blue);
+}
+
+.text__color--light {
+  color: var(--dark-gray);
 }
