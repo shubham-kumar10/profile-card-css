@@ -7,6 +7,7 @@
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
+  --light-grey: #d8d9df;
 }
 
 * {
@@ -19,24 +20,28 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  background: url(../images/bg-pattern-bottom.svg),
+    url(../images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+  background-color: hsl(185, 75%, 39%);
 }
 
 header {
-  background-color: #cffac7;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 main {
-  background-color: #f8e2ff;
   flex: 1;
 }
 
 footer {
-  background-color: #fceec7;
   margin-top: auto;
   padding: 1rem;
   font-size: 10px;
   font-family: "Kumbh Sans";
+  text-align: center;
 }
 
 .margin-10 {
@@ -82,17 +87,16 @@ footer {
 }
 
 .card {
-  max-width: 400px;
-  min-height: 500px;
+  width: 400px;
+  height: 500px;
   margin: auto;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .card__backdrop {
-  flex-grow: 0.4;
+  flex-grow: 0.8;
   background-image: url(./images/bg-pattern-card.svg);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -103,6 +107,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 .card__details--img {
@@ -118,7 +123,7 @@ footer {
 .card__details--footer {
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid var(--dark-gray);
+  border-top: 1px solid var(--light-grey);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: white;
