@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin:0;
+  margin: 0;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
 
 main {
   background-color: #f8e2ff;
-  flex:1;
+  flex: 1;
 }
 
 footer {
@@ -35,7 +35,7 @@ footer {
   margin-top: auto;
   padding: 1rem;
   font-size: 10px;
-  font-family: 'Kumbh Sans';
+  font-family: "Kumbh Sans";
 }
 
 .margin-10 {
@@ -78,4 +78,35 @@ footer {
 .styleGuide__items {
   color: white;
   display: flex;
+}
+
+.card {
+  max-width: 400px;
+  min-height: 500px;
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__backdrop {
+  flex-grow: 4;
+  background-image: url(./images/bg-pattern-card.svg);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card__details {
+  flex-grow: 6;
+  background-color: white;
+  border-bottom: 1px solid var(--dark-gray);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card__footer {
+  flex-grow: 2;
+  background-color: red;
+
 }
