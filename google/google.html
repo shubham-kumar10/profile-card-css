@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="stylesheet" href="./googlestyle.css" />
+    <!-- CSS 
+        Syntax:
+        selector {
+            property: value;
+            property1: value1;
+        }
+        e.g:
+        h1 {
+            color: black;
+        }
+        Selectors:
+        1. Element Selector -> all the elements in the scope
+        2. Class SElector -> Syntax .class-name -> class attribute is given
+        3. ID selector -> 
+            Syntax -> #id-name -> id attribute is given
+        Inline CSS -> Using HTML style attribute
+        e.g: style="border: 1px solid black;"
+        Internal Styling
+        <style> inside head -> write all the styles there
+        External CSS:
+        Create a file , <filename>.css
+        <link rel="stylesheet" href="<path to css file>" />
+    -->
+  </head>
+  <body>
+    <header>
+      <!-- navigation tag -->
+      <nav>
+        <ul>
+          <li id="menu-link"><a href="#">Google</a></li>
+          <li id="menu-link"><a href="#">Images</a></li>
+          <li id="menu-link">
+            <img
+              src="https://lh3.googleusercontent.com/ogw/ADea4I7j3biQLd1X1W6zFMClV1In9RFPeg8vIrf6G-8ZlQ=s32-c-mo"
+              alt="Profile pic"
+              class="profile-pic"
+            />
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="Google Dodle"
+          class="img"
+        />
+        <br>
+        <input type="text" class="input" />
+        <br>
+        <div>
+            <button class="btn">Google SEarch</button>
+            <button class="btn">I'm feeling lucky</button>
+        </div>
+       
+      </main>
+    </header>
+  </body>
+</html>
